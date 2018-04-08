@@ -1,13 +1,13 @@
 {
-    "name": "codev/yii2-highlight-js",
+    "name": "coderius/yii2-highlight-js",
     "description": "Highlight.js is a syntax highlighter written in JavaScript",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","yii2-highlight-js"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Sergio Codew",
-            "email": "mymail@gmail.com"
+            "name": "Sergio Coderius",
+            "email": "sunrise4fun@gmail.com"
         }
     ],
     "require": {
