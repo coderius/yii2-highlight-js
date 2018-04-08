@@ -1,0 +1,21 @@
+{
+    "name": "codev/yii2-highlight-js",
+    "description": "Highlight.js is a syntax highlighter written in JavaScript",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","yii2-highlight-js"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergio Codew",
+            "email": "mymail@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "codev\\yii2_highlight_js\\": "src/"
+        }
+    }
+}
