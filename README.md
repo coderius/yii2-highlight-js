@@ -7,9 +7,10 @@ If you post the code as part of the content on the website, then with this widge
 In the pictures below you can see examples of how the code will look on the website pages.
 
 
-<img align="left" style="margin-bottom: 30px;" src="Screenshot.png">
+<img align="left" src="Screenshot.png">
 
-***********
+'Xcode' theme.
+
 
 Installation
 ------------
