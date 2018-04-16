@@ -8,6 +8,7 @@ In the pictures below you can see examples of how the code will look on the webs
 
 
 <img align="left" src="Screenshot.png">
+<br/>
 
 Installation
 ------------
