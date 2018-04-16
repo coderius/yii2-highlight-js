@@ -6,8 +6,8 @@ If you post the code as part of the content on the website, then with this widge
 
 In the pictures below you can see examples of how the code will look on the website pages.
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![img](https://prnt.sc/j61o8o)
+![img-2](https://prnt.sc/j61t1v)
 
 Installation
 ------------

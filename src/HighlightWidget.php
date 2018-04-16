@@ -46,10 +46,10 @@ class HighlightWidget extends \yii\base\Widget
         $this->view = Yii::$app->getView();
         
         $highlightAsset = HighlightAsset::register($this->view);
-        $styleTheme = $this->theme !== null ? str_replace("-"," ",mb_strtolower(trim($this->theme))) .".css" : 'default.css';
+        $styleTheme = $this->theme !== null ? str_replace(" ","-",mb_strtolower(trim($this->theme))) .".css" : 'default.css';
         $highlightAsset->setTheme($styleTheme);
         
-        
+      
         if($this->forceCopy){
             $highlightAsset->publishOptions = [
                 'forceCopy' => true,
