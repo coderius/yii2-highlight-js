@@ -1,6 +1,13 @@
 Syntax highlighter widget for Yii2
 ==================================
-Highlight.js is a syntax highlighter written in JavaScript
+This widget is for the yii2 framework. This is a wrapper for the javascript plugin Highlight.js.
+
+If you post the code as part of the content on the website, then with this widget your code will look stylish.
+
+In the pictures below you can see examples of how the code will look on the website pages.
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
 
 Installation
 ------------
