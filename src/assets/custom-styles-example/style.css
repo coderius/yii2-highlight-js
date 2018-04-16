@@ -1,0 +1,21 @@
+pre{
+    margin: 15px 0 !important;
+    /*padding: 0;*/
+    background-color: #F5F7F8 !important;
+}
+
+.hljs{
+    /*background-color: transparent;*/
+} 
+
+pre *{
+    font-size: 15px !important;
+    /*white-space: pre !important;*/
+    /*overflow-x: scroll !important;*/
+    /*font-family: Menlo, monospace;*/
+    font-family: Consolas, 'Ubuntu Mono', 'Courier New' !important;
+}
+
+.hljs-meta{
+    
+}

@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist codev/yii2-highlight-js "*"
+php composer.phar require --prefer-dist coderius/yii2-highlight-js "*"
 ```
 
 or add
@@ -40,9 +40,7 @@ Some code that needs to be formalized with the plugin must be framed in the bloc
 
 ```html
 <pre>
-<code>
 ...some code
-</code>
 </pre>
 ```
 
@@ -52,7 +50,7 @@ If You need to change the styles of the code block, you can attach your styles i
 ```php
 <?php coderius\yii2_highlight_js\HighlightWidget::begin(
             [
-                'customAsset' => codev\yii2_highlight_js\NumLineAsset::className(),
+                'customAsset' => \coderius\yii2_highlight_js\CustomExampleAsset::register($this),
 
             ]
         ); 
@@ -62,27 +60,117 @@ If You need to change the styles of the code block, you can attach your styles i
 
 <?php coderius\yii2_highlight_js\HighlightWidget::end(); ?>
 ```
+
 In this example I did my custom asset (as example codev\yii2_highlight_js\NumLineAsset::className())
 It contains paths to styles and scripts to change the style HighlightWidget.
 
-!Do not forget to specify the dependencies in the file
+
+Advensed example:
 
 ```php
-/**
- * This is just an example.
- */
-class NumLineAsset extends AssetBundle
-{
 
-...code
+<?php HighlightWidget::begin([
+    'theme' => 'Xcode',
+    'customAsset' => \coderius\yii2_highlight_js\CustomExampleAsset::register($this),
+    'css' => "pre{font-style: italic;}"//any string style css 
+    'js' => "alert('ok');",
+    'positionJs' => yii\web\View::POS_END,//default value is yii\web\View::POS_READY
+]); ?>
 
-public $depends = [
-        'coderius\yii2_highlight_js\HighlightAsset',
-    ];
 
-...code
+    <?= $article->text; ?>
+
+
+           
+<?php HighlightWidget::end(); ?>
 
 ```
+In this example I set theme name as "Xcode". But default theme is "Default"
+
+
+Themes list:
+------------
+Default
+Agate
+Androidstudio
+Arduino Light
+Arta
+Ascetic
+Atelier Cave Dark
+Atelier Cave Light
+Atelier Dune Dark
+Atelier Dune Light
+Atelier Estuary Dark
+Atelier Estuary Light
+Atelier Forest Dark
+Atelier Forest Light
+Atelier Heath Dark
+Atelier Heath Light
+Atelier Lakeside Dark
+Atelier Lakeside Light
+Atelier Plateau Dark
+Atelier Plateau Light
+Atelier Savanna Dark
+Atelier Savanna Light
+Atelier Seaside Dark
+Atelier Seaside Light
+Atelier Sulphurpool Dark
+Atelier Sulphurpool Light
+Atom One Dark
+Atom One Light
+Brown Paper
+Codepen Embed
+Color Brewer
+Darcula
+Dark
+Darkula
+Docco
+Dracula
+Far
+Foundation
+Github Gist
+Github
+Googlecode
+Grayscale
+Gruvbox Dark
+Gruvbox Light
+Hopscotch
+Hybrid
+Idea
+Ir Black
+Kimbie Dark
+Kimbie Light
+Magula
+Mono Blue
+Monokai Sublime
+Monokai
+Obsidian
+Ocean
+Paraiso Dark
+Paraiso Light
+Pojoaque
+Purebasic
+Qtcreator Dark
+Qtcreator Light
+Railscasts
+Rainbow
+Routeros
+School Book
+Solarized Dark
+Solarized Light
+Sunburst
+Tomorrow Night Blue
+Tomorrow Night Bright
+Tomorrow Night Eighties
+Tomorrow Night
+Tomorrow
+Vs
+Vs 2015
+Xcode
+Xt 256
+Zenburn
+
+
 
 License
 -------

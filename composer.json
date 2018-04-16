@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "codev\\yii2_highlight_js\\": "src/"
+            "coderius\\yii2_highlight_js\\": "src/"
         }
     }
 }

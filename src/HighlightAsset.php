@@ -13,11 +13,10 @@ use yii\web\View;
 class HighlightAsset extends AssetBundle
 {
     public $sourcePath = __DIR__ . '/assets';
- 
-    public $css = [
-            'highlight/styles/magula.css'
-   
-            ];
+//    public $baseUrl = '@web';
+    
+    //vs.css
+    public $css = [];
     
     
     public $js = [
@@ -40,18 +39,25 @@ class HighlightAsset extends AssetBundle
     
     public function init()
     {
+
+//        $this->css = [];
+
         parent::init();
     }
     
+    public function setTheme($style){
+        $this->css[] = "highlight/styles/{$style}";
+    }
     
     /**
      * 
      * @param type View $view
      */
-    public static function register($view)
-    {
-        parent::register($view);
-    }    
+//    public static function register($view)
+//    {
+//       
+//        parent::register($view);
+//    }    
     
     
 }
