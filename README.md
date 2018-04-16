@@ -8,6 +8,7 @@ In the pictures below you can see examples of how the code will look on the webs
 
 ![img](https://prnt.sc/j61o8o)
 ![img-2](https://prnt.sc/j61t1v)
+<img align="left" src="https://prnt.sc/j61o8o">
 
 Installation
 ------------
