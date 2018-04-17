@@ -1,10 +1,13 @@
+Syntax highlighter widget for Yii2
+==================================
+
 [![Latest Stable Version](https://poser.pugx.org/coderius/yii2-highlight-js/v/stable)](https://packagist.org/packages/coderius/yii2-highlight-js)
 [![Total Downloads](https://poser.pugx.org/coderius/yii2-highlight-js/downloads)](https://packagist.org/packages/coderius/yii2-highlight-js)
 [![Latest Unstable Version](https://poser.pugx.org/coderius/yii2-highlight-js/v/unstable)](https://packagist.org/packages/coderius/yii2-highlight-js)
 [![License](https://poser.pugx.org/coderius/yii2-highlight-js/license)](https://packagist.org/packages/coderius/yii2-highlight-js)
 [![Monthly Downloads](https://poser.pugx.org/coderius/yii2-highlight-js/d/monthly)](https://packagist.org/packages/coderius/yii2-highlight-js)
-Syntax highlighter widget for Yii2
-==================================
+
+
 This widget is for the yii2 framework. This is a wrapper for the javascript plugin Highlight.js.
 
 If you post the code as part of the content on the website, then with this widget your code will look stylish.
