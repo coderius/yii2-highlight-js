@@ -2,6 +2,7 @@
     "name": "coderius/yii2-highlight-js",
     "description": "Syntax highlighter widget for Yii2",
     "type": "yii2-extension",
+    "version": "1.0.0",
     "keywords": ["yii2","extension","yii2-highlight-js"],
     "license": "MIT",
     "authors": [
